@@ -1,4 +1,10 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
-Route::get('/', function () { return view('home'); }); // Create a home view using the theme's index body
+Route::get('/', function () { 
+    return view('home'); 
+});
+
 Route::resource('products', ProductController::class);
