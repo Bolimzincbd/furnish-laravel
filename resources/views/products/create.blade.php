@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('app')
 @section('content')
 <div class="container py-5">
     <h2>Add Product</h2>
