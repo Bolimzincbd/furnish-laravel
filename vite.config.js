@@ -5,8 +5,10 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/scss/theme.scss', // Adjust to match your theme's main scss file
-                'resources/js/app.js'
+                'resources/scss/style.scss', // Changed from theme.scss
+                'resources/js/main.js',      // Changed from app.js
+                'resources/js/custom.js',    // Include other necessary JS files
+                'resources/js/swiper.js'     // Include other necessary JS files
             ],
             refresh: true,
         }),
@@ -14,7 +16,7 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             scss: {
-                additionalData: `@use "sass:math";` // Carried over from theme's vite.config.js
+                additionalData: `@use "sass:math";`
             }
         }
     }
